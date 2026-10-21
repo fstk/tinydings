@@ -42,7 +42,7 @@ Fehler und Wünsche gern als [Issue](../../issues) melden.
 
 ## Lizenz und Quellcode
 
-Tinydings steht unter der [MIT-Lizenz](LICENSE). Der Quellcode wird nicht veröffentlicht, dieses Repository enthält nur die App als Download.
+Tinydings ist kostenlos und steht unter der [MIT-Lizenz](LICENSE). Der Quellcode ist nicht öffentlich.
 
 ## Hinweise und Haftungsausschluss
 
