@@ -1,53 +1,53 @@
 <p align="center">
-  <img src="docs/assets/icon.png" width="128" alt="Tinydings Icon">
+  <img src="docs/assets/icon.png" width="128" alt="Tinydings icon">
 </p>
 
 <h1 align="center">Tinydings</h1>
 
 <p align="center">
-  Kleine, kostenlose Mac-App, die Bilder per Drag &amp; Drop über die <a href="https://tinypng.com/developers">TinyPNG-API</a> komprimiert.<br>
-  macOS 26 oder neuer
+  A small, free Mac app that compresses images by drag &amp; drop using the <a href="https://tinypng.com/developers">TinyPNG API</a>.<br>
+  Requires macOS 26 or later
 </p>
 
 <p align="center">
-  <img src="docs/screenshots/hauptfenster.png" width="400" alt="Hauptfenster von Tinydings">
+  <img src="docs/screenshots/main-window.png" width="400" alt="Tinydings main window">
 </p>
 
 <p align="center">
-  <a href="../../releases/latest"><b>⬇︎ Neueste Version herunterladen</b></a>
+  <a href="../../releases/latest"><b>⬇︎ Download the latest version</b></a>
 </p>
 
-## Funktionen
+## Features
 
-- Stapel von Bildern (PNG, JPEG, WebP) ins Fenster **oder aufs Dock-Icon** ziehen
-- Je Datei Status, Größe vorher/nachher und Ersparnis, dazu die Gesamtersparnis
-- Ausgabe einstellbar: **Original überschreiben** (optional Original vorher in den Papierkorb) oder **in Unterordner schreiben** (Standard `tiny`, Name änderbar)
-- Wird ein Bild nicht kleiner, bleibt das Original unverändert
-- Beliebig viele Bilder auf einmal, verarbeitet werden jeweils 4 parallel (die übrigen warten in der Liste)
-- Eigener TinyPNG-API-Key, abgelegt in der Keychain
-- Oberfläche auf Deutsch und Englisch, umschaltbar in den Einstellungen
+- Drop a batch of images (PNG, JPEG, WebP) onto the window **or onto the Dock icon**
+- Per-file status, size before/after and savings, plus the total savings
+- Configurable output: **overwrite the original** (optionally moving the original to the Trash first) or **write to a subfolder** (default `tiny`, name is configurable)
+- If an image doesn't get smaller, the original is left untouched
+- Any number of images at once, processed 4 at a time (the rest wait in the list)
+- Your own TinyPNG API key, stored in the Keychain
+- Interface in English and German, switchable in the settings
 
 ## Installation
 
-1. Das Zip der [neuesten Version](../../releases/latest) laden und entpacken.
-2. `Tinydings.app` in den Ordner „Programme" ziehen.
-3. Beim ersten Start blockiert macOS die App, weil sie nicht notarisiert ist: Systemeinstellungen → Datenschutz & Sicherheit → „Dennoch öffnen", oder im Terminal `xattr -cr /Applications/Tinydings.app`.
-4. Einstellungen öffnen (⌘,) und den eigenen API-Key eintragen. „Key testen" prüft ihn. Einen kostenlosen Key gibt es bei [TinyPNG](https://tinify.com/developers) (500 Bilder pro Monat).
+1. Download the zip of the [latest release](../../releases/latest) and unzip it.
+2. Drag `Tinydings.app` into your Applications folder.
+3. On first launch macOS blocks the app because it is not notarized: System Settings → Privacy & Security → "Open Anyway", or run `xattr -cr /Applications/Tinydings.app` in Terminal.
+4. Open the settings (⌘,) and enter your own API key. "Test key" checks it. You can get a free key from [TinyPNG](https://tinify.com/developers) (500 images per month).
 
-## Benutzung
+## Usage
 
-Bilder ins Fenster oder aufs Dock-Icon ziehen, alternativ „Bilder auswählen …". Die Liste zeigt je Datei die Größe vorher und nachher und die Ersparnis. In den Einstellungen wählst du, ob die Originale überschrieben oder in einem Unterordner abgelegt werden, und die Sprache.
+Drop images onto the window or the Dock icon, or use "Choose images …". The list shows size before and after and the savings for each file. In the settings you choose whether originals are overwritten or saved to a subfolder, and the interface language.
 
-Fehler und Wünsche gern als [Issue](../../issues) melden.
+Please report bugs and requests as an [issue](../../issues).
 
-## Lizenz und Quellcode
+## License and source code
 
-Tinydings ist kostenlos und steht unter der [MIT-Lizenz](LICENSE). Der Quellcode ist nicht öffentlich.
+Tinydings is free and released under the [MIT License](LICENSE). The source code is not public.
 
-## Hinweise und Haftungsausschluss
+## Notes and disclaimer
 
-- **Keine Verbindung zu TinyPNG:** Tinydings ist ein unabhängiges Projekt und steht in keiner Verbindung zu TinyPNG bzw. Tinify, wird nicht von ihnen unterstützt, empfohlen oder betrieben. „TinyPNG" und „Tinify" sind Marken ihrer jeweiligen Inhaber. Die App nutzt lediglich die öffentlich dokumentierte [TinyPNG-API](https://tinypng.com/developers).
-- **Eigener API-Key, eigene Verantwortung:** Tinydings enthält keinen Key. Du trägst deinen eigenen TinyPNG-API-Key ein und bist selbst für ihn verantwortlich: für seine Geheimhaltung, für das Kontingent (im kostenlosen Tarif 500 Komprimierungen pro Monat) und für mögliche Kosten, wenn du ein kostenpflichtiges Kontingent nutzt. Gib deinen Key nicht weiter. Die App speichert ihn in deiner Keychain und sendet ihn nur an die TinyPNG-API.
-- **Deine Bilder gehen an TinyPNG:** Zum Komprimieren werden die Bilder an die Server von TinyPNG übertragen. Es gelten deren Nutzungsbedingungen und Datenschutzhinweise. Sende nichts, was du dort nicht verarbeiten lassen darfst oder willst.
-- **Originale:** Im Modus „Original überschreiben" wird die Datei ersetzt. Aktiviere bei Bedarf die Papierkorb-Option oder arbeite mit Kopien.
-- **Keine Gewähr:** Die Software wird ohne Mängelgewähr bereitgestellt, die Nutzung erfolgt auf eigenes Risiko. Es ist eine Beta.
+- **Not affiliated with TinyPNG:** Tinydings is an independent project. It is not affiliated with, endorsed by, or operated by TinyPNG or Tinify. "TinyPNG" and "Tinify" are trademarks of their respective owners. The app merely uses the publicly documented [TinyPNG API](https://tinypng.com/developers).
+- **Your own API key, your own responsibility:** Tinydings does not include a key. You enter your own TinyPNG API key and are responsible for it: for keeping it secret, for your quota (500 compressions per month on the free plan) and for any costs if you use a paid plan. Do not share your key. The app stores it in your Keychain and sends it only to the TinyPNG API.
+- **Your images are sent to TinyPNG:** To compress them, images are uploaded to TinyPNG's servers. Their terms of service and privacy policy apply. Do not send anything you are not allowed or willing to have processed there.
+- **Originals:** In "Overwrite original" mode the file is replaced. Enable the Trash option or work on copies if needed.
+- **No warranty:** The software is provided "as is", without warranty of any kind, and you use it at your own risk. This is a beta.
