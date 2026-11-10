@@ -31,7 +31,7 @@
 
 1. Download the zip of the [latest release](../../releases/latest) and unzip it.
 2. Drag `Tinydings.app` into your Applications folder.
-3. On first launch macOS blocks the app because it is not notarized: System Settings → Privacy & Security → "Open Anyway", or run `xattr -cr /Applications/Tinydings.app` in Terminal.
+3. On first launch macOS asks you to confirm that you want to open an app downloaded from the internet. Click "Open". The app is signed with a Developer ID and notarized by Apple.
 4. Open the settings (⌘,) and enter your own API key. "Test key" checks it. You can get a free key from [TinyPNG](https://tinify.com/developers) (500 images per month).
 
 ## Usage
