@@ -38,7 +38,7 @@
 
 Drop images onto the window or the Dock icon, or use "Choose images …". The list shows size before and after and the savings for each file. In the settings you choose whether originals are overwritten or saved to a subfolder, and the interface language.
 
-Please report bugs and requests as an [issue](../../issues).
+Please report bugs and requests as an [issue](../../issues). See the [changelog](CHANGELOG.md) for what changed in each version.
 
 ## License and source code
 
